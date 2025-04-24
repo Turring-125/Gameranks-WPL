@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact - GameScores</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #2a2e33;
+            color: #fff;
+        }
+
+        header {
+            background-color: #22262b;
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ccc;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #fff;
+        }
+
+        main {
+            padding: 30px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .game-header {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .game-image-container {
+            border: 2px solid #2c82cb;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 380px;
+            flex-shrink: 0;
+        }
+
+        .game-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .game-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .game-title {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .game-platforms {
+            font-size: 1rem;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .user-score-label {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .score-bar {
+            height: 24px;
+            width: 100%;
+            background-color: #555;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .score-fill {
+            height: 100%;
+            width: 85%;
+            background: linear-gradient(90deg, #4caf50, #8bc34a);
+            border-radius: 12px;
+        }
+
+        .rating-thread-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .age-rating {
+            display: inline-block;
+            background-color: #f39c12;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2rem;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 6px;
+        }
+
+        .thread-button {
+            background-color: #2c82cb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .thread-button:hover {
+            background-color: #3498db;
+        }
+
+        .thread-icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        .game-description {
+            line-height: 1.6;
+        }
+
+        .game-description p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">GAMESCORES</div>
+            <div class="nav-links">
+                <a href="login.html">Login/Signup</a>
+                <a href="index.html">Home</a>
+                <a href="#">Upcoming games</a>
+                <a href="about.html">About us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="game-header">
+            <div class="game-image-container">
+                <img class="game-image" src="loup2.png" alt="Genshin Impact" />
+            </div>
+            
+            <div class="game-info">
+                <h1 class="game-title">THE LAST OF US PART II REMASTERED</h1>
+                <p class="game-platforms">PS</p>
+                
+                <div class="user-score-label">User Score:</div>
+                <div class="score-bar">
+                    <div class="score-fill"></div>
+                </div>
+                
+                <div class="rating-thread-container">
+                    <div class="age-rating">18+</div>
+                    <button class="thread-button">
+                        <svg class="thread-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        User Thread
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-description">
+            <p>The Last of Us Part II Remastered is a gripping action-adventure game set in a post-apocalyptic world ravaged by a deadly fungal infection. Developed by Naughty Dog, the game follows Ellie, now a young woman, on a harrowing journey of revenge and self-discovery. Players traverse devastated environments, from overgrown city ruins to snowy wilderness, encountering hostile factions and infected creatures. The remastered version enhances the original with improved graphics, faster loading times, and the full power of the PlayStation 5.</p>
+            
+            <p>The story explores complex themes such as trauma, loss, and the cyclical nature of violence, presenting a narrative that challenges players’ morals and perceptions. With deeply human characters and emotional storytelling, the game delivers a cinematic experience backed by intense stealth and combat mechanics. The addition of new features like DualSense controller integration and a new roguelike mode called “No Return” adds more depth and replayability to the experience.</p>
+            
+            <p>Visually stunning and emotionally resonant, The Last of Us Part II Remastered stands as a landmark in narrative-driven gaming. Whether revisiting the story or experiencing it for the first time, players are drawn into a hauntingly beautiful world that leaves a lasting impact. It is a must-play title for fans of the series and newcomers alike, offering both a technical upgrade and enriched gameplay features.</p>
+        </div>
+    </main>
+
+</body>
+</html>
